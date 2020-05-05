@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: marcosmarcusmpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: marcosmarcusmpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: marcosmarcusmpipelinesjavascriptdocker 
+          image: markitopipelineacr2.azurecr.io/marcosmarcusmpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
